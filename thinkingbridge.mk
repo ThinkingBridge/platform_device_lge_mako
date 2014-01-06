@@ -5,6 +5,9 @@ TARGET_SCREEN_WIDTH := 768
 # Inherit some common ThinkingBridge stuff.
 $(call inherit-product, vendor/thinkingbridge/config/common.mk)
 
+# Inherit gsm packages
+$(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
